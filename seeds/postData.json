@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Where to Start with Web Development",
+        "post_content": "Starting with web development can be overwhelming, but thats ok! There's a lot to choose from, in regards to technologies and tools, so your first step should be figuring out what part interests you. Remember, there are three core components; front-end, back-end and fullstack. Start by learning about each and go from there!",
+        "user_id": "1"
+    },
+    {
+        "title": "Introduction to React Hooks",
+        "post_content": "React Hooks are a new addition in React 16.8 that let you use state and other React features in functional components. They make it easy to reuse stateful logic and eliminate the need for class components.",
+        "user_id": "2"
+    },
+    {
+        "title": "CSS Grid Layout",
+        "post_content": "CSS Grid Layout is a layout system in CSS that allows you to create two-dimensional grid-based layouts with rows and columns. It provides a powerful and flexible way to create responsive designs, and it's now supported by all modern browsers",
+        "user_id": "3"
+    },
+    {
+        "title": "What are some of the best food spots in Toronto?",
+        "post_content": "I'm visiting for the weekend and want to get some good eats, where should I start?",
+        "user_id": "4"
+    }
+]

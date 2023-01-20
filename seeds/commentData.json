@@ -1,0 +1,22 @@
+[
+    {
+        "comment_content": "This isnt about food at all.",
+        "user_id": 4,
+        "post_id": 3
+    },
+    {
+        "comment_content": "Beep Boop this is a seeded comment beep boop",
+        "user_id": 2,
+        "post_id": 1
+    },
+    {
+        "comment_content": "Uryyb Jbag lbh jnag gb rirelbar gurfr (ROT13)",
+        "user_id": 1,
+        "post_id": 2
+    },
+    {
+        "comment_content": "I think you may be looking for a different blog site",
+        "user_id": 3,
+        "post_id": 4
+    }
+]
