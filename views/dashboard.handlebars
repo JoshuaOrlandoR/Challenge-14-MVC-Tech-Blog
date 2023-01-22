@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>{{username}}: Dashboard</h2>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-12 col-md-6">
+      <h3>Write a new post:</h3>
+
+      <form class="form form-post">
+        <div class="form-group">
+            <label for="post-title">Your Post's Title:</label>
+          <input class="form-control" type="text" id="post-title" name="post-title" placeholder="Post Tentative Title" />
+        </div>
+      
+        <div class="form-group">
+          <textarea class="form-control" id="post-content" name="post-content" placeholder="Your article content goes here!"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info">Create</button>
+        </div>
+      </form>
+    </div>
+
+
+    {{!-- The following is repurposed from a YouTube tutorial for formatting references and got the idea on how to create the buttons with it --}}
+    {{#if posts.length}} 
+    <div class="col-12 col-md-6 post-list">
+        <h4> All Posts: </h4>
+        {{#each posts as |post|}}
+        <div class="row">
+            <div class=" col-md-9">
+                <h5><a href="/post/{{post.id}}"> {{post.title}}</a></h5>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-danger" data-id="{{blog.id}}">DELETE</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+  </div>
+</div>
+
+<script src = "/js/dashboard.js"> </script>

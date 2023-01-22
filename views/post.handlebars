@@ -1,0 +1,32 @@
+<div class="container postContainer text">
+    <div class="row">
+        <div class="col-9">
+            <h2 class="text-uppercase">{{title}}</h2>
+        </div>
+        <div class="col-3">
+            <p>Created by {{user.username}}</p>
+            <p> Posted: {{post.created_at}}</p>
+        </div>
+    </div>
+    <p class="text-center">
+        {{post_content}}
+    </p>
+    {{#if logged_in}}
+        <form class="post-comments justify-content-center" data-postid={{id}}>
+            <label for ="comment_content">Comment here!</label>
+            <textarea id='comment_content' name="comment_content" placeholder="Enter comment..." cols="30" rows="3"></textarea>
+            <button class="btn btn-info" type="submit">Submit</button>
+        </form>
+    {{/if}}
+
+    <h2 class="text-center">Comments</h2>
+
+    {{#each comments as |comment|}}
+
+        <div class="commentSection">
+            <p class="text-center">{{comment.comment_content}}</p>
+            <p class="text-center">Created by {{comment.user.username}}</p>
+        </div>
+    {{/each}}
+    <script src="/js/comments.js"></script>
+</div>
