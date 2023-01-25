@@ -8,7 +8,7 @@ const registerFormHandler = async (event) => {
         const response = await fetch ('/api/user', {
             method:'POST',
             body: JSON.stringify({ username, password }),
-            headers: { 'Content-Type': 'appliucation/json'},
+            headers: { 'Content-Type': 'application/json'},
         });
 
         if (response.ok) {

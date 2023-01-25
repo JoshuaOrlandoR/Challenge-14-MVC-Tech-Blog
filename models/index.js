@@ -4,31 +4,32 @@ const User = require('./User');
 
 User.hasMany(Post, {
     foreignKey: 'user_id',
+    onDelete: 'CASCADE'
 });
 
 User.hasMany(Comment, {
     foreignKey: 'user_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
 });
 
 Post.hasMany(Comment, {
     foreignKey: 'post_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
 });
 
 Post.belongsTo(User, {
     foreignKey: 'user_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
 }); //ask about how relavent having this is, is this not the same as the first block of code? I see how they can be different but make sure to get clarity on this, will include the other "pairs" for now just in case
 
 Comment.belongsTo(User, {
     foreignKey: 'user_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
 });
 
 Comment.belongsTo(Post, {
     foreignKey: 'post_id',
-    onDelete: 'cascade',    
+    onDelete: 'CASCADE',    
 });
 
 module.exports = {

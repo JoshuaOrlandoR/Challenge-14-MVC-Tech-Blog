@@ -1,7 +1,0 @@
-Delete this later but need to make sure I understand which models I actually need to make! 
-
-Index file for sure
-
-User - ID, Username, Email, PW - DONE 
-Blog Posts  - ID, Title of Post, Content, UserID, Post Date (Maybe?)- DONE
-Blog Comments - ID, Comment Content, User ID, Blog Post ID, Comment Date(Maybe?) - DONE
